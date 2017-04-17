@@ -65,6 +65,38 @@
         </section>
 
         <!-- Loops -->
+
+          <section>
+          <h3>Class 1 - Review</h3>
+          <ul>
+            <li>Linking an external JS file into html</li>
+            <li>Console and getting results on your screen</li>
+            <li>Declaring variables</li>
+            <li>Concatenation</li>
+          </ul>
+          </section>
+
+          <section>
+          <h3>Class 2 - Review</h3>
+          <ul>
+            <li>Functions, how to declare & invoke</li>
+            <li>Arguments, and returning in functions</li>
+            <li>Data Types (like strings and booleans)</li>
+            <li>Scope</li>
+            <li>Control Flow (<strong>if/else</strong> statements)</li>
+            <li>Comparison and Logic Operators</li>
+          </ul>
+          </section>
+
+          <section>
+          <h3>Agenda for Today:<br>Data Structures</h3>
+          <ul>
+            <li>Loops</li>
+            <li>Arrays</li>
+            <li>Objects</li>
+          </ul>
+          </section>
+
           <section>
           <h3>Loops</h3>
             <img src="img/hula-hoop.jpg" alt="Lego stormtrooper inside key ring"/>
@@ -80,13 +112,6 @@ while (bottlesOfBeer &gt; 0) {
   console.log(bottlesOfBeer + ' bottles of beer on the wall');
   bottlesOfBeer = bottlesOfBeer - 1;
 }</code></pre>
-          </section>
-
-          <section>
-            <h3>Infinite Loops</h3>
-            <p>Make sure something changes in the loop, or your loop will go on forever...</p>
-            <img src="img/infinite-loop.jpg" alt="Spiral that goes on toward infinity"/>
-            <p class="credit">Photo credit: <a href="http://www.flickr.com/photos/samueljohn/5348462863/" target="_blank">Samuel John</a> <a href="http://creativecommons.org/licenses/by-nc/2.0/" target="_blank">cc</a></p>
           </section>
 
           <section>
@@ -115,6 +140,14 @@ for (var i = 1; i &lt;= 100; i++) {
   }
 }</code></pre>
           </section>
+
+          <section>
+            <h3>Infinite Loops</h3>
+            <p>Make sure something changes in the loop, or your loop will go on forever...</p>
+            <img src="img/infinite-loop.jpg" alt="Spiral that goes on toward infinity"/>
+            <p class="credit">Photo credit: <a href="http://www.flickr.com/photos/samueljohn/5348462863/" target="_blank">Samuel John</a> <a href="http://creativecommons.org/licenses/by-nc/2.0/" target="_blank">cc</a></p>
+          </section>
+
 
           <section>
           <h3>Break</h3>
@@ -163,7 +196,7 @@ var myFavoriteThings = ['Broccoli', 1024, 'Sherlock'];</code></pre>
   <pre><code class="javascript">var rainbowColors = ['Red', 'Orange', 'Yellow', 'Green',
 'Blue', 'Indigo', 'Violet'];
 
-console.log(rainbowColors.length);</code></pre>
+console.log(rainbowColors.length); //This will print out 7</code></pre>
           </section>
 
           <section>
@@ -173,7 +206,9 @@ console.log(rainbowColors.length);</code></pre>
 'Blue', 'Indigo', 'Violet'];
 
 var firstColor = rainbowColors[0];
-var lastColor  = rainbowColors[6];</code></pre><br>
+var lastColor  = rainbowColors[6];
+console.log(firstColor); //Output: Red
+console.log(lastColor); //Output: Violet</code></pre><br>
   <p>JS arrays are <strong>zero-indexed</strong>, so counting starts at 0.</p>
           </section>
 
@@ -181,8 +216,9 @@ var lastColor  = rainbowColors[6];</code></pre><br>
             <h3>Changing arrays</h3>
             <p>You can use bracket notation to change an item in an array</p>
   <pre><code class="javascript">var myFavoriteThings = ['Broccoli', 1024, 'Sherlock'];
-
-myFavoriteThings[0] = 'Asparagus';</code></pre>
+console.log(myFavoriteThings); //Outputs: ["Broccoli", 1024, "Sherlock"]
+myFavoriteThings[0] = 'Asparagus';
+console.log(myFavoriteThings); //Outputs: ["Asparagus", 1024, "Sherlock"]</code></pre>
           </section>
 
           <section>
@@ -190,7 +226,24 @@ myFavoriteThings[0] = 'Asparagus';</code></pre>
             <p>Arrays do not have a fixed length. You can use <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push">push</a></code> to add something to an array.</p>
   <pre><code class="javascript">var myFavoriteThings = ['Broccoli', 1024, 'Sherlock'];
 
-myFavoriteThings.push('Dancing');</code></pre>
+console.log(myFavoriteThings);
+
+myFavoriteThings.push('Dancing');
+
+console.log(myFavoriteThings);</code></pre>
+          </section>
+
+          <section>
+
+          <h3>Experimenting with <strong>pop</strong></h3>
+          <p>You can use <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop" target="_blank">pop</a></code> to remove the <br>last element of an array.</p>
+          <pre><code class="javascript">var myFavoriteThings = ['Broccoli', 1024, 'Sherlock'];
+
+console.log(myFavoriteThings); //Output: ['Broccoli', 1024, 'Sherlock']
+
+myFavoriteThings.pop();
+
+console.log(myFavoriteThings); //Output: ['Broccoli', 1024]</code></pre>
           </section>
 
           <section>
@@ -232,29 +285,29 @@ for (var i = 0; i &lt; rainbowColors.length; i++) {
           <h3>Objects</h3>
           <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects">Objects</a> let us store a collection of properties.</p>
 <pre><code class="javascript">var objectName = {
-  propertyName: propertyValue,
-  propertyName: propertyValue
+  propertyName: propertyValue,  //These are called key-value pairs.
+  propertyName: propertyValue   //  key:value
 };
 </code></pre>
-<pre><code class="javascript">var user = {
-  hometown: 'Atlanta, GA',
-  hair: 'Auburn',
-  likes: ['knitting', 'code'],
-  birthday: {month: 10, day: 17}
+<pre><code class="javascript">var thisIsAmanda = {
+  hometown: 'San Antonio, TX',
+  hair: 'dark brown',
+  likes: ['being active outside', 'traveling'], //you can nest arrays
+  birthday: {month:1, day:11 }     //or objects, within an object
 };</code></pre>
         </section>
 
         <section>
           <h3>Accessing Objects</h3>
           <p>You can retrieve values using <strong><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_Accessors#Dot_notation">dot notation</a></strong></p>
-<pre><code class="javascript">var user = {
-  hometown: 'Atlanta, GA',
-  hair: 'Auburn'
+<pre><code class="javascript">var thisIsAmanda = {
+  hometown: 'San Antonio, TX',
+  hair: 'dark brown'
 };
 
-var usersHometown = user.hometown;</code></pre><br>
+var myHometown = thisIsAmanda.hometown;</code></pre><br>
           <p>Or using <strong><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_Accessors#Bracket_notation">bracket notation</a></strong> (like arrays)</p>
-<pre><code class="javascript">var usersHair = user['hair'];</code></pre>
+<pre><code class="javascript">var myHair = thisIsAmanda['hair'];</code></pre>
         </section>
 
         <section>
@@ -307,16 +360,16 @@ describeUser(jolene);</code></pre>
 
         <section>
           <h3>Let's Develop It</h3>
-          <p>Create an object to hold information on your favorite recipe. It should have properties for:</p>
+          <p>Create a <strong>résumé</strong> object to hold information about yourself now or as the developer 1-2 years from now. It should have properties for:</p>
           <ul>
-            <li><code>recipeTitle</code> (a string)</li>
-            <li><code>servings</code> (a number)</li>
-            <li><code>ingredients</code> (an array of strings)</li>
-            <li><code>directions</code> (a string)</li>
+            <li><code>yourName</code> (a string)</li>
+            <li><code>yearsOfExperience</code> (a number)</li>
+            <li><code>languages</code> (an array of strings)</li>
+            <li><code>idealJobForMe</code> (a string)</li>
           </ul>
           <br><br>
-          <p>Try displaying some information about your recipe.</p>
-          <p>Bonus: Create a loop to list all the ingredients.</p>
+          <p>Try printing out some information about your résumé.</p>
+          <p>Bonus: Create a loop to list all the languages on your résumé.</p>
         </section>
 
       <!-- Object Methods -->
@@ -342,7 +395,7 @@ jolene.eat('pizza');</code></pre>
 
         <section>
           <h3>Let's Develop It</h3>
-          <p>Go back to your recipe object. Add a function called <code>letsCook</code> that says "I'm hungry! Let's cook..." with the name of your recipe title.</p>
+          <p>Go back to your <strong>résumé</strong> object. Add a function called <code>letsTalk</code> that says "Thanks so much for your interest, _____, I'd love to talk more" with the name of the person interested in contacing you.</p>
           <p>Call your new method.</p>
         </section>
 
