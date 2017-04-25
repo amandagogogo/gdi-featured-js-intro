@@ -67,7 +67,7 @@
           <section>
             <h3>Let's Review</h3>
             <img src="img/elephants.jpg" alt="Two elephants interacting"/>
-            <p class="credit">Photo credit:  <a href="http://www.flickr.com/photos/ginable/325235488/">Ginable</a> <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/">cc</a>
+            <p class="credit">Photo credit:  <a href="http://www.flickr.com/photos/ginable/325235488/" target="_blank">Ginable</a> <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/" target="_blank">cc</a>
           </section>
 
           <section>
@@ -82,13 +82,13 @@
           <section>
             <h3>HTML is Markup</h3>
             <img src="img/markup.jpg" alt="Printed document covered in ink marks"/>
-            <p class="credit">Photo credit:  <a href="http://www.flickr.com/photos/nics_events/2349630241/">Nic's events</a> <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/">cc</a>
+            <p class="credit">Photo credit:  <a href="http://www.flickr.com/photos/nics_events/2349630241/" target="_blank">Nic's events</a> <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/" target="_blank">cc</a>
           </section>
 
           <section>
             <h3>CSS is Style</h3>
             <img src="img/fingernails.jpg" alt="Fingernails with polka-dot paint job"/>
-            <p class="credit">Photo credit:  <a href="http://www.flickr.com/photos/pumpkincat210/4778025555/">pumpkincat210</a> <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/">cc</a>
+            <p class="credit">Photo credit:  <a href="http://www.flickr.com/photos/pumpkincat210/4778025555/" target="_blank">pumpkincat210</a> <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/" target="_blank">cc</a>
           </section>
 
           <section>
@@ -104,7 +104,7 @@
             <h3>Nesting</h3>
             <p>HTML elements "nest" inside one another</p>
             <img src="img/nesting-dolls.jpg" alt="Russian nesting dolls"/>
-            <p class="credit">Photo credit:  <a href="http://www.flickr.com/photos/johnkay/3539939004/">John K</a> <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/">cc</a>
+            <p class="credit">Photo credit:  <a href="http://www.flickr.com/photos/johnkay/3539939004/">John K</a> <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/" target="_blank">cc</a>
           </section>
 
           <section>
@@ -131,7 +131,7 @@
 
           <section>
             <h3>The DOM Tree: Sample Model</h3>
-            <p>However, it is something much more than that. Any HTML document is a tree structure defined by the <strong><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction">DOM (Document Object Model)</a></strong>.</p>
+            <p>However, it is something much more than that. Any HTML document is a tree structure defined by the <strong><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction" target="_blank">DOM (Document Object Model)</a></strong>.</p>
             <img src="img/dom-tree.png" alt="Simple DOM Tree"/>
           </section>
 
@@ -143,14 +143,14 @@
             <ol>
               <li>Change the content tree any way you want.</li>
               <li>Build an HTML document from scratch.</li>
-              <li>Access or replace any existing DOM nodes (HTML elements in the DOM).</li>
+              <li>Access or replace any existing HTML elements in the DOM (also known as existing DOM nodes).</li>
             </ol>
           </section>
 
           <section>
             <h3>Finding Nodes</h3>
             <img src="img/search.jpg" alt="A magnifying glass"/>
-            <p class="credit">Photo credit:  <a href="https://flic.kr/p/4UokrH">Jeffery Beall</a> <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/">cc</a>
+            <p class="credit">Photo credit:  <a href="https://flic.kr/p/4UokrH" target="_blank">Jeffery Beall</a> <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/" target="_blank">cc</a>
           </section>
 
           <section>
@@ -187,11 +187,11 @@ for (var i = 0; i &lt; listItems.length; i++) {
 
           <section>
             <h3>DOM Access: HTML 5</h3>
-            <p>In newer browsers, you can use methods <code><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName">getElementsByClassName</a></code>, <code><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector">querySelector</a></code>, and <code><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll">querySelectorAll</a></code>.</p><br>
-            <p>Available in <a href="http://caniuse.com/#search=getElementsByClassName">IE9+, FF3.6+, Chrome 17+, Safari 5+</a>:</p>
+            <p>In newer browsers, you can use methods <code><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName" target="_blank">getElementsByClassName</a></code>, <code><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector" target="_blank">querySelector</a></code>, and <code><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll" target="_blank">querySelectorAll</a></code>.</p><br>
+            <p>Available in <a href="http://caniuse.com/#search=getElementsByClassName" target="_blank">IE9+, FF3.6+, Chrome 17+, Safari 5+</a>:</p>
 <pre><code class="javascript">document.getElementsByClassName(className);
 </code></pre><br>
-          <p>Available in <a href="http://caniuse.com/#search=querySelectorAll">IE8+, FF3.6+, Chrome 17+, Safari 5+</a>:</p>
+          <p>Available in <a href="http://caniuse.com/#search=querySelectorAll" target="_blank">IE8+, FF3.6+, Chrome 17+, Safari 5+</a>:</p>
 <pre><code class="javascript">document.querySelector(cssQuery);
 document.querySelectorAll(cssQuery);
 </code></pre>
@@ -202,23 +202,25 @@ document.querySelectorAll(cssQuery);
             <p>Any method that starts with <code>getElement</code> will return a <strong>single</strong> node.</p>
 <pre><code class="javascript">document.getElementById('uniqueID'); // returns a single node
 </code></pre><br>
-          <p>Any method that starts with <code>getElements</code> will return an <strong>array</strong> of nodes. To modify a single node, you will need to use bracket notation to get the correct one.</p>
+          <p>Any method that starts with <code>getElements</code> will return an <strong>array*</strong> of nodes. To modify a single node, you will need to use bracket notation to get the correct one.</p>
 <pre><code class="javascript">document.getElementsByTagName('p'); // returns multiple nodes
 
 var specificParagraph = document.getElementsByTagName('p')[2];
 </code></pre>
+<hr>
+<p>*using <code>getElements</code> will actually give you a <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList" target="_blank">NodeList Object</a>, which is a lot like an array.</p>
           </section>
 
         <!--Manipulating the DOM-->
           <section>
             <h3>Changing Nodes</h3>
             <img src="img/two-color.jpg" alt="Red and yellow tulip"/>
-            <p class="credit">Photo credit:  <a href="https://flic.kr/p/bCYp2S">Darryl Kenyon</a> <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/">cc</a>
+            <p class="credit">Photo credit:  <a href="https://flic.kr/p/bCYp2S" target="_blank">Darryl Kenyon</a> <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/" target="_blank">cc</a>
           </section>
 
           <section>
             <h3>DOM Nodes: Attributes</h3>
-            <p>You can access and change attributes of DOM nodes using dot notation.</p><br>
+            <p>You can access (<code>get</code>) and change (<code>set</code>) attributes of DOM nodes using dot notation.</p><br>
             <p>To change this element:</p>
 <pre><code class="html">&lt;img id="kittenPic" src="http://placekitten.com/g/200/300" alt="cat"/&gt;
 </code></pre>
@@ -234,7 +236,7 @@ imgKitten.src = 'http://placekitten.com/g/600/500';</code></pre>
 
           <section>
             <h3>DOM Nodes: Getting and Setting Attributes</h3>
-            <p>You can also use <code><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/getAttribute">getAttribute</a></code> or <code><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute">setAttribute</a></code></p>
+            <p>You can also use <code><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/getAttribute" target="_blank">getAttribute</a></code> or <code><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute" target="_blank">setAttribute</a></code></p>
 <pre><code class="html">&lt;img id="kittenPic" src="http://placekitten.com/g/200/300" alt="cat"/&gt;
 </code></pre>
           <p>We could change the src attribute this way:</p>
@@ -263,7 +265,7 @@ pageBody.style.color = 'red';</code></pre>
 
           <section>
             <h3>DOM Nodes: More Styles</h3>
-            <p>The rule of thumb in JavaScript is to change CSS styles with a "<code>-</code>" to <a href="https://en.wikipedia.org/wiki/CamelCase">camelCase</a>.</p><br>
+            <p>The rule of thumb in JavaScript is to change CSS styles with a "<code>-</code>" to <a href="https://en.wikipedia.org/wiki/CamelCase" target="_blank">camelCase</a>.</p><br>
             <p>To make this CSS:</p>
 <pre><code class="css">body {
   background-color: pink;
@@ -288,13 +290,11 @@ pageBody.style.paddingTop = '10px';
         <!--Manipulating the DOM-->
           <section>
             <h3>DOM innerHTML</h3>
-            <p>Each DOM node has an <code><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML">innerHTML</a></code> property with the HTML and content of its children. You can use the property to view or change the HTML of a node.</p><br>
+            <p>Each DOM node has an <code><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML" target="_blank">innerHTML</a></code> property with the HTML and content of its children. You can use the property to view or change the HTML of a node.</p><br>
             <p>For example, you can overwrite the entire body:</p>
   <pre><code class="javascript">var pageBody = document.getElementsByTagName('body')[0];
 
 pageBody.innerHTML = '&lt;h1&gt;Oh Noes!&lt;/h1&gt;&lt;p&gt;I changed the whole page!&lt;/p&gt;'</code></pre><br>
-            <p>Or just add some new content to the end</p>
-  <pre><code class="javascript">pageBody.innerHTML += '...just adding this at the end of the page.';</code></pre>
           </section>
 
           <section>
@@ -353,7 +353,7 @@ pageBody.appendChild(newParagraph);</code></pre>
 
         <section>
           <h3>Events</h3>
-          <p>An <strong><a href="https://developer.mozilla.org/en-US/docs/Web/Events">event</a></strong> is an object that is sent when actions take place on your webpage, most often when a user interacts with your webpage.</p><br>
+          <p>An <strong><a href="https://developer.mozilla.org/en-US/docs/Web/Events" target="_blank">event</a></strong> is an object that is sent when actions take place on your webpage, most often when a user interacts with your webpage.</p><br>
           <p>For example, JavaScript creates an event when a user clicks an element.</p>
 <pre><code class="javascript">element.addEventListener('click', function(event) {
   // code to be executed when user clicks
@@ -363,15 +363,15 @@ pageBody.appendChild(newParagraph);</code></pre>
 
         <section>
           <h3>Types of Events</h3>
-          <p>There are a <a href="https://developer.mozilla.org/en-US/docs/Web/Events">variety of events</a>. Some of the more common events are:</p>
+          <p>There are a <a href="https://developer.mozilla.org/en-US/docs/Web/Events" target="_blank">variety of events</a>. Some of the more common events are:</p>
           <ul>
-            <li><strong><a href="https://developer.mozilla.org/en-US/docs/Web/Events/click">click</a>:</strong> Occurs when the user clicks on an element</li>
-            <li><strong><a href="https://developer.mozilla.org/en-US/docs/Web/Events/mouseover">mouseover</a>:</strong> Occurs when the pointer is moved onto an element</li>
-            <li><strong><a href="https://developer.mozilla.org/en-US/docs/Web/Events/mouseout">mouseout</a>:</strong> Occurs when the pointer is moved off an element</li>
-            <li><strong><a href="https://developer.mozilla.org/en-US/docs/Web/Events/keyup">keyup</a>:</strong> Occurs when the user releases a key</li>
-            <li><strong><a href="https://developer.mozilla.org/en-US/docs/Web/Events/load_(ProgressEvent)">load</a>:</strong> Occurs when a document has been loaded</li>
-            <li><strong><a href="https://developer.mozilla.org/en-US/docs/Web/Events/focus">focus</a>:</strong> Occurs when an element gets focus</li>
-            <li><strong><a href="https://developer.mozilla.org/en-US/docs/Web/Events/blur">blur</a>:</strong> Occurs when an element loses focus</li>
+            <li><strong><a href="https://developer.mozilla.org/en-US/docs/Web/Events/click" target="_blank">click</a>:</strong> Occurs when the user clicks on an element</li>
+            <li><strong><a href="https://developer.mozilla.org/en-US/docs/Web/Events/mouseover" target="_blank">mouseover</a>:</strong> Occurs when the pointer is moved onto an element</li>
+            <li><strong><a href="https://developer.mozilla.org/en-US/docs/Web/Events/mouseout" target="_blank">mouseout</a>:</strong> Occurs when the pointer is moved off an element</li>
+            <li><strong><a href="https://developer.mozilla.org/en-US/docs/Web/Events/keyup" target="_blank">keyup</a>:</strong> Occurs when the user releases a key</li>
+            <li><strong><a href="https://developer.mozilla.org/en-US/docs/Web/Events/load_(ProgressEvent)" target="_blank">load</a>:</strong> Occurs when a document has been loaded</li>
+            <li><strong><a href="https://developer.mozilla.org/en-US/docs/Web/Events/focus" target="_blank">focus</a>:</strong> Occurs when an element gets focus</li>
+            <li><strong><a href="https://developer.mozilla.org/en-US/docs/Web/Events/blur" target="_blank">blur</a>:</strong> Occurs when an element loses focus</li>
           </ul>
         </section>
 
@@ -420,7 +420,7 @@ button.addEventListener("click", sayHi);</code></pre>
 
         <section>
           <h3>Preventing Defaults</h3>
-          <p>Elements like links and checkboxes have default behaviors determined by the browser. However, the <code>event</code> object has a built-in method to <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault">prevent the default behavior</a></p>
+          <p>Elements like links and checkboxes have default behaviors determined by the browser. However, the <code>event</code> object has a built-in method to <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault" target="_blank">prevent the default behavior</a></p>
           <p>Our anchor link in HTML</p>
 <pre><code class="html">&lt;a id="myLink" href="https://www.girldevelopit.com"&gt;GDI&lt;/a&gt;
 </code></pre>
@@ -433,7 +433,7 @@ link.addEventListener("click", function(event) {
 </code></pre>
         </section>
 
-        <section>
+<!--        <section>
           <h3>currentTarget</h3>
           <img src="img/arrow.jpg" alt="Lighted arrow sign pointed downward"/>
           <p class="credit">Photo credit: <a href="https://flic.kr/p/6ei68A" target="_blank">Alan Berning</a> <a href="http://creativecommons.org/licenses/by-nc/2.0/" target="_blank">cc</a></p>
@@ -441,7 +441,7 @@ link.addEventListener("click", function(event) {
 
         <section>
           <h3>currentTarget</h3>
-          <p>The event's <code><a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/currentTarget">currentTarget</a></code> references the element the event listener was attached to.</p>
+          <p>The event's <code><a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/currentTarget" target="_blank">currentTarget</a></code> references the element the event listener was attached to.</p>
           <p>Our button in HTML:</p>
           <pre><code class="html">&lt;button id="myBtn"&gt;Click Me!&lt;/a&gt;</code></pre>
           <p>This code adds styles and text to our clicked button</p>
@@ -453,16 +453,16 @@ myButton.addEventListener("click", function(event) {
   btn.style.backgroundColor = 'red';
   btn.innerHTML = 'Clicked!';
 };</code></pre>
-<p>You may also see code that references the keyword <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this">this</a></code> as the "target".
-        </section>
+<p>You may also see code that references the keyword <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this" target="_blank">this</a></code> as the "target".
+</section> -->
 
-        <section>
+<!--        <section>
           <h3>Let's Develop It</h3>
           <p>Write code that targets this link:</p>
 <pre><code class="html">&lt;a href="http://girldevelopit.com/" id="gdiLink"&gt;Girl Develop It&lt;/a&gt;
 </code></pre>
           <p>When a user clicks the link, the page should display an error message instead of going to the Girl Develop It homepage.</p>
-        </section>
+        </section>  -->
 
       <!-- User input -->
         <section>
@@ -473,7 +473,7 @@ myButton.addEventListener("click", function(event) {
 
         <section>
           <h3>Forms</h3>
-          <p>You can collect information from users to use in your code. The most common method is an HTML form</p>
+          <p>You can collect information from users to use in your code. The most common method is an HTML form.</p>
 <pre><code class="html">&lt;form id="userForm"&gt;
   &lt;label for="name"&gt;First Name:&lt;/label&gt;
   &lt;input type="text" id="firstName"/&gt;
@@ -490,12 +490,12 @@ myButton.addEventListener("click", function(event) {
 <pre><code class="javascript">var name = document.getElementById('firstName').value;
 console.log(name);
 </code></pre>
-          <p>You can retrieve the value of a form at any time. Even when an event like <code>blur</code> is triggered (when a form element loses focus).</p>
+          <p>You can retrieve the value of a form at any time, even when an event like <code>blur</code> is triggered (when a form element loses focus).</p>
         </section>
 
         <section>
           <h3>Radio Buttons</h3>
-          <p>Radio buttons usually do not have IDs, so you will need to use a <code>for</code> loop to get the value on each radio:</p>
+          <p>Radio buttons usually do not have IDs, so you would need to use a <code>for</code> loop to get the value on each radio:</p>
 <pre><code class="javascript">var radios = document.getElementsByName('married');
 
 var length = radios.length;
@@ -541,7 +541,7 @@ submitButton.addEventListener("click", function(event) {
           <ul>
             <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank">JavaScript Guide</a>, from the Mozilla Developers Network.</li>
             <li><a href="http://www.codecademy.com/tracks/javascript" target="_blank">Code Academy</a>, with interactive JavaScript lessons to help you review.</li>
-            <li><a href="https://www.khanacademy.org/computing/cs/programming">Khan Academy</a> has a lot more information abut drawing and animations.</li>
+            <li><a href="https://www.khanacademy.org/computing/cs/programming" target="_blank">Khan Academy</a> has a lot more information abut drawing and animations.</li>
           </ul>
         </section>
 
@@ -552,7 +552,7 @@ submitButton.addEventListener("click", function(event) {
       <footer>
         <div class="copyright">
           Intro to JavaScript -- Girl Develop It --
-          <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
+          <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
         </div>
       </footer>
     </div>
