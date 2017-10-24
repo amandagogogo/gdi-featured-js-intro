@@ -63,7 +63,7 @@
           <h2>Class 4</h2>
         </section>
 
-        <!-- Review: Role of HTML v. CSS-->
+        <!--Intro-->
           <section>
             <h3>Let's Review</h3>
             <img src="img/elephants.jpg" alt="Two elephants interacting"/>
@@ -92,12 +92,20 @@
           </section>
 
           <section>
+            <h3>JavaScript is Interactivity</h3>
+            <img src="img/confirm_window.jpg" alt="Confirm window in browser"/>
+            <p class="credit">Photo credit:  <a href="http://www.datasprings.com/help/dnn-tutorials/artmid/535/articleid/89/javascript-getting-started-guide" target="_blank">DataSprings</a>
+          </section>
+
+
+          <section>
             <h3>IDs vs Classes</h3>
             <p><strong>ID</strong> - Should only apply to one element on a webpage, i.e., you might have an id of <code>banner</code> on your webpage's banner.<br />
             The <code>#</code> is how you find ids in CSS.</p><br>
             <p><strong>Class</strong> - Lots of elements can have the same class, i.e., There can be many elements with a <code>warning</code> class on one webpage.<br />
             The <code>.</code> is how you find classes in CSS.</p>
           </section>
+
 
         <!--The DOM-->
           <section>
@@ -180,10 +188,16 @@
 <pre><code class="javascript">var listItems = document.getElementsByTagName('li');
 
 for (var i = 0; i &lt; listItems.length; i++) {
-  var listItem = listItems[i];
+  console.log(listItems[i]);
 }
 </code></pre>
           </section>
+
+          <section>
+          <h3>Let's Develop It</h3>
+          <p>Visit <a href="https://google.com" target='_blank'>google.com</a> and practice getting an element by ID and by Tag Name.</p>
+          </section>
+
 
           <section>
             <h3>DOM Access: HTML 5</h3>
@@ -208,7 +222,7 @@ document.querySelectorAll(cssQuery);
 var specificParagraph = document.getElementsByTagName('p')[2];
 </code></pre>
 <hr>
-<p>*using <code>getElements</code> will actually give you a <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList" target="_blank">NodeList Object</a>, which is a lot like an array.</p>
+<p>*using <code>getElements</code> will actually give you a <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList" target="_blank">NodeList Object</a>, which is like an array.</p>
           </section>
 
         <!--Manipulating the DOM-->
@@ -262,6 +276,7 @@ imgKitten.setAttribute('src', 'http://placekitten.com/g/600/500');</code></pre>
 
 pageBody.style.color = 'red';</code></pre>
           </section>
+
 
           <section>
             <h3>DOM Nodes: More Styles</h3>
